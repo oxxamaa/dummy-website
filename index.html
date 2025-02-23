@@ -1,67 +1,59 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>dummy website</title>
-  <link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dummy One-Page Website</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Dummy Website</title>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 
-    <!-- Header with company name and navigation links -->
-    <header>
-        <div class="company-name">BOTTtest</div>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
+<!-- Header with company name and navigation links -->
+<header>
+    <div class="company-name">BOTTtest</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
 
-    <!-- Main content section -->
-    <div class="container">
-        <h1>Welcome to Our Website</h1>
-        <p>This is a dummy page for testing purposes. Please feel free to contact us.</p>
+<!-- Main content section -->
+<div class="container">
+    <h1>Welcome to Our Website</h1>
+    <p>This is a dummy page for testing purposes. Please feel free to contact us.</p>
 
-        <!-- Contact Form -->
-        <div class="contact-form">
-                <h2>Contact Us</h2>
-                <form action="https://formspree.io/f/mldgkeqn" method="POST">
-                    <label>
-                        Your email:
-                        <input type="email" name="email" required>
-                    </label>
-                    <label>
-                        Your message:
-                        <textarea name="message" required></textarea>
-                    </label>
-                    <button type="submit">Send</button>
-                </form>
+    <!-- Contact Form -->
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="https://formspree.io/f/mldgkeqn" method="POST">
+            <div class="form-group">
+                <label for="name"></label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
             </div>
-        </div>
+            <div class="form-group">
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject"></label>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message"></label>
+                <textarea id="message" name="message" placeholder="Your message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</div>
 
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Oussama K. All rights reserved.</p>
+</footer>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Oussama K. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
-<!-- partial -->
-  <script  src="./script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
